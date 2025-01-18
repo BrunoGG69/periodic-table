@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Gradient Definitions for Periodic Table Groups */
+
+/* Group 1: Alkali Metals */
+.group-alkali {
+    background: radial-gradient(circle, #4CAF50, #A5D6A7); /* Red to Pink */
+}
+
+/* Group 2: Alkaline Earth Metals */
+.group-alkaline-earth {
+    background: radial-gradient(circle, #fb923c, #fbbf24); /* Orange to Yellow */
+}
+
+/* Group 3-12: Transition Metals */
+.group-transition {
+    background: radial-gradient(circle, #FFF9C4, #FFEB3B); /* Blue to Indigo */
+}
+
+/* Group 13: Boron Group */
+.group-metalloids {
+    background: radial-gradient(circle, #d1d5db, #64748b); /* Gray to Slate */
+}
+
+/* Group 14: Carbon Group */
+.group-nonmetals {
+    background: radial-gradient(circle, #34d399, #14b8a6); /* Green to Teal */
+}
+
+/* Group 15: Nitrogen Group */
+.group-metals {
+    background: radial-gradient(circle, #A0B6B2, #6B8C7A); /* Blue to Purple */
+}
+
+.group-halogen {
+    background: radial-gradient(circle, #76e07d, #c4e64d); /* Soft Neon Green to Light Yellowish Green */
+}
+
+/* Group 18: Noble Gases */
+.group-noble-gases {
+    background: radial-gradient(circle, #FFBCB3, #8E44AD); /* Indigo to Violet */
+}
+
+/* Lanthanides */
+.group-lanthanides {
+    background: radial-gradient(circle, #fcd34d, #f97316); /* Light Peach to Soft Orange */
+}
+
+/* Actinides */
+.group-actinides {
+    background: radial-gradient(circle, #6ee7b7, #34d399); /* Light Green to Medium Green */
+}
+
+.group-transactinides {
+    background: radial-gradient(circle, #f3e6fc, #c0a9f5); /* Very Light Purple to Lighter Purple */
+}
+
+
+
+/* Gradient for Group Number Boxes */
+.number-box-group {
+    background: radial-gradient(circle, #C62828, #FF7043); /* Light Green to Blue */
+}
+
+/* Gradient for Period Number Boxes */
+.number-box-period {
+    background: radial-gradient(circle, #FFAB91, #B71C1C); /* Orange to Yellow */
+}
