@@ -3,7 +3,8 @@ import {ElementBox, RadioActiveElementBox, PeriodsBox, GroupsBox, BlankBox} from
 const App = () => {
     return (
         <div className={`min-h-screen bg-black flex items-center justify-center`}>
-            <div className="p-10 max-w-full overflow-x-auto mx-auto">
+            <div
+                className="p-10 max-w-full overflow-x-auto mx-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300">
                 <div
                     className="inline-grid"
                     style={{
