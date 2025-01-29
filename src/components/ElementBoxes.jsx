@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-export const ElementBox = ({ atomicNumber, symbol, atomicWeight, groupName }) => {
+export const ElementBox = ({ atomicNumber, symbol, atomicWeight, groupName}) => {
     return (
         <div
-            className={`w-20 h-20 flex flex-col items-center justify-center ${groupName} transition-all hover:scale-150 hover:border-2 hover:border-black rounded-xl`}>
+            className={`w-20 h-20 flex flex-col items-center justify-center ${groupName} transition-all hover:scale-150 hover:border-2 hover:border-black rounded-xl`} onClick={() => document.getElementById(atomicNumber).showModal()}>
             <h1 className="text-xl text-black">{atomicNumber}</h1>
             <h2 className="text-2xl font-bold text-black">{symbol}</h2>
             <p className="text-sm text-black">{atomicWeight}</p>
@@ -21,7 +21,7 @@ ElementBox.propTypes = {
 export const RadioActiveElementBox = ({ atomicNumber, symbol, atomicWeight, groupName }) => {
     return (
         <div
-            className={`w-20 h-20 flex flex-col items-center justify-center ${groupName} transition-all hover:scale-150 hover:border-2 hover:border-black rounded-xl`}>
+            className={`w-20 h-20 flex flex-col items-center justify-center ${groupName} transition-all hover:scale-150 hover:border-2 hover:border-black rounded-xl`} onClick={() => document.getElementById(atomicNumber).showModal()}>
             <div className="flex items-center space-x-2">
                 <h1 className="text-xl text-black">{atomicNumber}</h1>
                 <span className="text-xl text-yellow-500">☢</span>
@@ -37,6 +37,48 @@ RadioActiveElementBox.propTypes = {
     symbol: PropTypes.string.isRequired,
     atomicWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     groupName: PropTypes.string.isRequired,
+};
+
+
+export const ElementBoxModal = ({ atomicNumber, symbol, atomicWeight, groupName, onClick}) => {
+    return (
+        <div
+            className={`w-40 h-40 flex flex-col items-center justify-center ${groupName} transition-all hover:scale-150 hover:border-2 hover:border-black rounded-xl`} onClick={onClick}>
+            <h1 className="text-xl text-black">{atomicNumber}</h1>
+            <h2 className="text-2xl font-bold text-black">{symbol}</h2>
+            <p className="text-sm text-black">{atomicWeight}</p>
+        </div>
+    );
+};
+
+ElementBoxModal.propTypes = {
+    atomicNumber: PropTypes.number.isRequired,
+    symbol: PropTypes.string.isRequired,
+    atomicWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    groupName: PropTypes.string.isRequired,
+    onClick: PropTypes.string,
+};
+
+export const RadioActiveElementBoxModal = ({ atomicNumber, symbol, atomicWeight, groupName, onClick }) => {
+    return (
+        <div
+            className={`w-40 h-40 flex flex-col items-center justify-center ${groupName} transition-all hover:scale-150 hover:border-2 hover:border-black rounded-xl`} onClick={onClick}>
+            <div className="flex items-center space-x-2">
+                <h1 className="text-xl text-black">{atomicNumber}</h1>
+                <span className="text-xl text-yellow-500">☢</span>
+            </div>
+            <h2 className="text-2xl font-bold text-black">{symbol}</h2>
+            <p className="text-sm text-black">{atomicWeight}</p>
+        </div>
+    );
+};
+
+RadioActiveElementBoxModal.propTypes = {
+    atomicNumber: PropTypes.number.isRequired,
+    symbol: PropTypes.string.isRequired,
+    atomicWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    groupName: PropTypes.string.isRequired,
+    onClick: PropTypes.string,
 };
 
 export const GroupsBox = ({ groupNumber }) => {
