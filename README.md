@@ -4,7 +4,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-### This is a modern looking Periodic Table where all the 118 elements of the table are shown. You can also see more info after clicking the desired element. Visit the website [here](https://periodictable.brunogg.in/play))
+### This is a modern looking Periodic Table where all the 118 elements of the table are shown. You can also see more info after clicking the desired element. Visit the website [here](https://periodictable.brunogg.in/))
 
 ## Technologies used:
 - HTML
@@ -17,7 +17,7 @@
 - Modern Periodic Table Design
 - Elements Clearly Displayed
 ----------------------------------------------------------------------------------------------------------------------------
-## How to run the project locally (I recommend visiting it [here](https://periodictable.brunogg.in/play))
+## How to run the project locally (I recommend visiting it [here](https://periodictable.brunogg.in/))
 1. Clone the repository
     ```bash
     git clone https://github.com/BrunoGG69/BrunoWave.git
